@@ -1,0 +1,222 @@
+/* Reset básico para a lista */
+nav ul {
+    list-style-type: none;
+    /* Remove os marcadores de lista */
+    margin: 0;
+    /* Remove as margens padrão */
+    padding: 0;
+    /* Remove o preenchimento padrão */
+    overflow: hidden;
+    /* Limpa o float */
+    background-color: #d6b319;
+    /* Cor de fundo do menu */
+}
+
+/* Estilo para cada item da lista */
+nav li {
+    float: left;
+    /* Alinha os itens lado a lado */
+}
+
+/* Estilo para os links dentro dos itens da lista */
+nav a {
+    display: block;
+    /* Faz o link preencher o elemento <li> */
+    color: white;
+    /* Cor do texto */
+    text-align: center;
+    /* Centraliza o texto */
+    padding: 14px 16px;
+    /* Preenchimento dentro dos links */
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    /* Remove o sublinhado do link */
+}
+
+/* Efeito ao passar o mouse sobre os links */
+nav a:hover {
+    background-color: #dbc91f;
+    /* Muda a cor de fundo ao passar o mouse */
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    padding: 20px;
+}
+
+p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin: 20px;
+}
+
+/* Estilos gerais */
+
+body {
+    height: 100%;
+    /* Faz qye ocupe a pag toda */
+    margin: 0;
+    /* Remove as margens padrão */
+    padding: 0;
+    /* Remove o preenchimento padrão */
+    display: flex;
+    flex-direction: column;
+    /*display e flex oara fazer que fique no alinhamento da coluna, dando mais ordem na pag*/
+
+    /* TRABALHANDO COM IMAGEM DE FUNDO */
+    background-image: url('images/imagem_fundo.jpg');
+    /* Define a imagem de fundo */
+    background-size: cover;
+    /* Garante que a imagem cubra todo o espaço disponível */
+    background-position: center;
+    /* Centraliza a imagem na página */
+    background-repeat: no-repeat;
+    /* Evita a repetição da imagem */
+}
+
+img {
+    max-width: 95%;
+    height: auto;
+    border-radius: 50px;
+    padding: 20px;
+    align-items: center;
+}
+
+div {
+    background-color: antiquewhite;
+    width: 50%;
+    border-radius: 30px;
+    /*Colando espaço dentro da div para evitar ficar colado*/
+    padding: 20px;
+    /*evitar que fica colado na pagina*/
+    margin: 20px auto;
+    /*o auto centraliza na*/
+}
+
+header {
+    position: fix;
+    width: 100%;
+    background-image: url('images/imagem_fundo_header.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+main {
+    flex: 1;
+    overflow: auto;
+    /* Permite que o conteúdo do <main> role */
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    background-color: #333;
+    color: white;
+}
+
+figure {
+    display: inline-block;
+    margin: 20px 0;
+    text-align: center;
+}
+
+figcaption {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #333;
+}
+
+p {
+    text-indent: 3em;
+}
+
+
+.poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.white {
+    color: whitesmoke;
+}
+
+.h2-div {
+    background-color: rgb(241, 171, 230);
+    padding: 0px;
+    margin: 20px auto;
+    width: 50%;
+}
+
+/*Estilos para o fomulário ficar bonito!*/
+
+#contact-form {
+    /*Espaço que o formulário vai ocupar*/
+    max-width: 90%;
+    /*centralar o formulario*/
+    margin: 0 auto;
+    /*Distancia dos elementos internos com a borda do formulario*/
+    padding: 20px;
+    background: #f3f3f3;
+    /*Raio das bordas */
+    border-radius: 20px;
+    font-family: "Poppins", sans-serif;
+}
+
+/*Vai herdar as coisas de contact-form, mas tratar nos casos do label */
+#contact-form label {
+    display: block;
+    margin-top: 20px;
+    font-size: 16px;
+    
+
+}
+
+/*Aqui vai tratar o campo dentro dos inputs*/
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form input[type="tel"] {
+    /*Largura que ele vai ocupar do pomulario*/
+    width: 95%;
+    /*espressura do campo input*/
+    padding: 10px;
+    /*Pra não ficar um elemento grudado no oturo*/
+    margin-top: 10px;
+    /**solid deixa mais visivel a borda*/    
+    border: 3px solid #ccc;
+    /*raio das bordas*/
+    border-radius:10px;
+    font-size: 14px;
+    /*Estilo da fonte*/
+    font-style: italic;
+    font-family: "Poppins", sans-serif;
+
+}
+
+#contact-form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #d6b319;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/*O hover da aquele "realce" ao passar o mouse em cima do botao*/
+#contact-form button:hover {
+    background-color: #dbc91f;
+    
+}
